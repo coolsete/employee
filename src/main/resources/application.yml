@@ -1,0 +1,16 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    username: test
+    password: postgres_test
+    host: postgres
+    db: test
+    port: 5432
+    url: jdbc:postgresql://postgres:5432/test
+    initialize: true
+    driver-class-name: org.postgresql.Driver
+    schema: schema-postgresql.sql
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
